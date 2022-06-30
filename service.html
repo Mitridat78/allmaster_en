@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+    <script src="https://kit.fontawesome.com/e2a1423284.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normilize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Service centres</title>
+</head>
+<body class="my-body">
+    <header>
+        <nav class="navbar navbar-expand-xl my-background shadow-sm border-top-0 border-left-0 border-right-0"> <!-- justify-content-center - все будет по центру при минимальном (sm и xs) разрешении экрана -->
+            <div class="justify-content-center container my-background">
+            
+                <div>
+                    <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt=""></a>
+                </div>
+                <div class="form-group pt-3">
+                    <select class="form-control border-0" id="sel1" name="sellist1">
+                        <option>UA</option>
+                        <option>RU</option>
+                        <option selected>EN</option>
+                    </select>
+                </div> <!-- end div form-group -->
+                
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#">Service centres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#">Repairer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#">Orders</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#">Flea market</a>
+                        </li> 
+                    </ul>
+                </div>  <!-- end div collapse -->
+                    
+                <div class="mr-md-auto"> <!-- mr-md-auto - следующий блок (div) будут справа пока разрешение экрана более или равно md -->
+                    <a href="#"><img class="pr-3" src="./img/p1.png" alt=""></a>
+                    <a href="#"><img class="mr-3" src="./img/p2.png" alt=""></a>
+                </div>
+                
+                <div class="user-login">
+                    <span class="mr-3"><a href="#">Sign in</a></span>
+                    <span class="btn btn-outline-success font-weight-bold">Order a repair</span>
+                </div>
+           
+            </div> <!-- end div container -->
+        </nav>
+    </header>
+    
+
+        <div class="container">
+            <div class="row no-gutters justify-content-center align-items-center pl-3 pr-3 pb-3 pt-2 mb-3 mt-3" style="background-color:rgb(10, 112, 125)"> <!-- form search, no-gutters - удаляем желоба (расстояние) между столбцами -->
+                <div class="col-lg-3 col-md-12">
+                    <div class="mt-2"> <!-- div class for input form -->
+                        <input type="text" class="form-control small rounded-0 border-0" id="string-search" 
+                        placeholder="Search">
+                    </div> <!-- end div for input form -->
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="mt-2">
+                        <select class="form-control rounded-0 border-0" id="sel2" name="sellist2">
+                            <option class="small">choose a country</option>
+                            <option class="small">Ukraine</option>
+                            <option class="small">Poland</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="mt-2"> <!-- div class for input form -->
+                        <select class="form-control rounded-0 border-0" id="sel3" name="sellist3">
+                            <option class="small">Choose region</option>
+                            <option class="small">Kyiv</option>
+                            <option class="small">Kharkiv</option>
+                        </select>
+                    </div> <!-- end div for input form -->
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="mt-2"> <!-- div class for input form -->
+                        <select class="form-control rounded-0 border-0" id="sel4" name="sellist4">
+                            <option class="small">Choose city</option>
+                            <option class="small">Kyiv</option>
+                            <option class="small">Kharkiv</option>
+                        </select>
+                    </div> <!-- end div for input form -->
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <div class="text-md-center text-sm-center text-center mt-2 ml-lg-2 ml-md-0"> <!-- div class for input form -->
+                        <!--    <a href="#" style="border: 1px solid red;" class="bg-success text-white font-weight-bold pl-5 pr-5 pt-3 pb-3">Найти</a>-->
+                        <button type="button" class="btn btn-success btn-block border-0 rounded-0 font-weight-bold pt-2 pb-2">Search</button>
+                    </div> <!-- end div for input form -->
+                </div>
+            </div> <!-- row form search-->
+        <!--    </div>-->
+        </div> <!-- end div container form search -->
+        
+        <div class="container my-body">
+            <div class="d-flex flex-lg-row flex-column my-background">
+                <div class="flex-fill">
+                    <div class="my-background ml-3 mr-3">
+                        <h1 style="font-size: 27px;">Service centers for the repair of equipment</h1>
+                        <p>Number of services in the category: <span class="text-success"> 128</span></p>
+                        <span class="mr-3 text-muted small">Sort</span><i class="fa-solid fa-arrow-up-short-wide mr-3"></i><i class="fa-solid fa-arrow-down-a-z mr-3"></i>
+                    </div>
+                    <div class="row no-gutters ml-3 mr-2">
+                        <div class="col-lg-12">
+                            <div class="card-group d-flex flex-md-row flex-column"> <!-- разрешение md и выше карта в одну строку, ниже md - друг под другом -->
+                                <div class="card border-0">
+                                    <div class="d-flex flex-row align-items-center"> <!-- делаем одним блоком картинку и кард-боди, чтобы картинка была по центру блока card-body -->
+                                        <img class="rounded-circle img-user" src="./img/no-image.png" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">LLC Example</h5>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fas fa-user-shield text-success"></i> trusted company</div>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fa-solid fa-location-dot"></i> USA</div>
+                                                    <div class="card-text font-size-card-text text-muted"><i class="fa-solid fa-house-chimney"></i> www.test.us</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card d-flex align-items-sm-start align-items-center border-0"> <!-- разрешение sm и выше ровняем с начала, ниже sm - по центру -->
+                                    <div class="card-body ml-md-5 ml-4">
+                                        <div class="card-title font-weight-bold">Rating 5.0    
+                                            <img class="align-baseline ml-2" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">    
+                                        </div> <!-- end div card-title -->
+                                            <div class="card-text">5 completed orders</div>
+                                            <div class="card-text">7 reviews</div>
+                                            <div class="card-text">4 years on site</div>
+                                            <div class="d-flex justify-content-md-end mt-3"> <a class="btn btn-success job-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> To offer a job</a></div>                                  
+                                    </div> <!-- end div class card body -->  
+                                </div> <!--end div class card -->
+                            </div> <!-- end div card-group -->
+                            <hr>
+                        </div>  <!--end div class col -->
+                        
+            <!-- second line -->
+                        
+                        <div class="col-lg-12">
+                            <div class="card-group d-flex flex-md-row flex-column"> <!-- разрешение md и выше карта в одну строку, ниже md - друг под другом -->
+                                <div class="card border-0">
+                                    <div class="d-flex flex-row align-items-center"> <!-- делаем одним блоком картинку и кард-боди, чтобы картинка была по центру блока card-body -->
+                                        <img class="rounded-circle img-user" src="./img/no-image.png" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">LLC Example</h5>
+                                                    <div class="card-text font-size-card-text text-warning mb-2"><i class="fas fa-user-shield text-warning"></i> under review</div>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fa-solid fa-location-dot"></i> Ukraine, Kyiv</div>
+                                                    <div class="card-text font-size-card-text text-muted"><i class="fa-solid fa-house-chimney"></i> www.test.ua</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card d-flex align-items-sm-start align-items-center border-0"> <!-- разрешение sm и выше ровняем с начала, ниже sm - по центру -->
+                                    <div class="card-body ml-md-5 ml-4">
+                                        <div class="card-title font-weight-bold">Rating 0.0    
+                                            <img class="align-baseline ml-2" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">    
+                                        </div> <!-- end div card-title -->
+                                            <div class="card-text">0 completed orders</div>
+                                            <div class="card-text">0 reviews</div>
+                                            <div class="card-text">2 years on site</div>
+                                            <div class="d-flex justify-content-md-end mt-3"> <a class="btn btn-success job-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> To offer a job</a></div>                                  
+                                    </div> <!-- end div class card body -->  
+                                </div> <!--end div class card -->
+                            </div> <!-- end div card-group -->
+                            <hr>
+                        </div>  <!--end div class col -->
+                <!-- третий ряд -->
+                        <div class="col-lg-12">
+                            <div class="card-group d-flex flex-md-row flex-column"> <!-- разрешение md и выше карта в одну строку, ниже md - друг под другом -->
+                                <div class="card border-0">
+                                    <div class="d-flex flex-row align-items-center"> <!-- делаем одним блоком картинку и кард-боди, чтобы картинка была по центру блока card-body -->
+                                        <img class="rounded-circle img-user" src="./img/no-image.png" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">LLC Example</h5>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fas fa-user-shield text-success"></i> trusted company</div>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fa-solid fa-location-dot"></i> USA</div>
+                                                    <div class="card-text font-size-card-text text-muted"><i class="fa-solid fa-house-chimney"></i> www.test.us</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card d-flex align-items-sm-start align-items-center border-0"> <!-- разрешение sm и выше ровняем с начала, ниже sm - по центру -->
+                                    <div class="card-body ml-md-5 ml-4">
+                                        <div class="card-title font-weight-bold">Rating 5.0    
+                                            <img class="align-baseline ml-2" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">    
+                                        </div> <!-- end div card-title -->
+                                            <div class="card-text">5 completed orders</div>
+                                            <div class="card-text">7 reviews</div>
+                                            <div class="card-text">4 years on site</div>
+                                            <div class="d-flex justify-content-md-end mt-3"> <a class="btn btn-success job-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> To offer a job</a></div>                                  
+                                    </div> <!-- end div class card body -->  
+                                </div> <!--end div class card -->
+                            </div> <!-- end div card-group -->
+
+                            <hr>
+                        </div>  <!--end div class col -->
+
+                <!-- четвертій ряд -->
+                        <div class="col-lg-12">
+                            <div class="card-group d-flex flex-md-row flex-column"> <!-- разрешение md и выше карта в одну строку, ниже md - друг под другом -->
+                                <div class="card border-0">
+                                    <div class="d-flex flex-row align-items-center"> <!-- делаем одним блоком картинку и кард-боди, чтобы картинка была по центру блока card-body -->
+                                        <img class="rounded-circle img-user" src="./img/no-image.png" alt="">
+                                            <div class="card-body">
+                                                <h5 class="card-title">LLC Example</h5>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fas fa-user-shield text-success"></i> trusted company</div>
+                                                    <div class="card-text font-size-card-text text-muted mb-2"><i class="fa-solid fa-location-dot"></i> USA</div>
+                                                    <div class="card-text font-size-card-text text-muted"><i class="fa-solid fa-house-chimney"></i> www.test.us</div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="card d-flex align-items-sm-start align-items-center border-0"> <!-- разрешение sm и выше ровняем с начала, ниже sm - по центру -->
+                                    <div class="card-body ml-md-5 ml-4">
+                                        <div class="card-title font-weight-bold">Rating 5.0    
+                                            <img class="align-baseline ml-2" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">
+                                            <img class="align-baseline" src="./img/raiting.png" alt="">    
+                                        </div> <!-- end div card-title -->
+                                            <div class="card-text">15 completed orders</div>
+                                            <div class="card-text">7 reviews</div>
+                                            <div class="card-text">3 years on site</div>
+                                            <div class="d-flex justify-content-md-end mt-3"> <a class="btn btn-success job-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> To offer a job</a></div>                                  
+                                    </div> <!-- end div class card body -->  
+                                </div> <!--end div class card -->
+                            </div> <!-- end div card-group -->
+
+                            <hr>
+                        </div>  <!--end div class col -->
+                        
+                    </div> <!-- end class row -->
+                    
+                </div> <!-- end div class flex-fill -->
+            
+                <div class="flex-fill my-background">    
+                    <div class="row mr-1 ml-1">
+                        <div class="col-lg-12 mt-3">
+                            <span>Do you repair equipment?</span>
+                            <p>Earn with us</p>
+                            <p><span class="btn btn-outline-success font-weight-bold">Register service center</span></p>
+                            <div class="ml-1 pt-3">
+                                <p>Repair of office equipment</p>
+                                <p>Repair of computer equipment</p>
+                                <p>Repair of small household appliances</p>
+                                <p>Repair of large household appliances</p>
+                                <p>Repair of climate equipment</p>
+                                <p>Home appliances repair</p>
+                                <p>Repair of smartphones, phones</p>
+                                <p>Power Tool Repair</p>
+                                <p>Security systems</p>
+                            </div>
+                            <p class="mt-5" style="font-size: 22px;">Popular service centers</p>  
+                            <img class="mb-5" src="./img/rekl.png" style="width: 300px;" alt="">          
+                        </div>
+                    </div>
+                </div>   <!-- end div flex-fill -->
+            </div> <!-- end div d-flex -->
+    <!--    </div> -->
+        </div> <!-- end div container -->
+
+    <footer class="container-fluid bg-light">
+        <div class="container">
+            <div class="row mt-5 pb-5 pt-3 ml-sm-5 ml-lg-0 ml-xl-5 ml-md-0">
+                <div class="col-lg-3 col-xl-2 col-md-6 col-sm-5 col-xs-12 text-xl-left text-lg-left text-sm-center text-md-center text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">How it works</a></li>
+                        <li class="mb-2"><a href="#">Forum</a></li>
+                        <li><a href="#">Articles</a></li>
+                    </ul>
+                </div> <!--end div column-->
+
+                <div class="col-lg-3 col-xl-2 col-md-6 col-sm-5 col-xs-12 text-xl-left text-lg-left text-sm-center text-md-center text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Support</a></li>
+                        <li><a href="#">Connect with us</a></li>
+                    </ul>
+                </div> <!--end div column-->
+                
+                <div class="col-lg-3 col-xl-2 col-md-6 col-sm-5 col-xs-12 text-xl-left text-lg-left text-sm-center text-md-center text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Paid services</a></li>
+                        <li class="mb-2"><a href="#">Cooperation</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div> <!--end div column-->
+
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-5 col-xs-12 text-xl-left text-lg-left text-sm-center text-md-center text-center pb-md-4 mt-md-3 mt-lg-0">
+                    <a href="#"><img src="./img/face.png" alt=""></a>
+                    <a href="#"><img src="./img/youtube.png" alt=""></a>
+                    <a href="#"><img src="./img/inst.png" alt=""></a>
+                    <a href="#"><img src="./img/twit.png" alt=""></a>
+                    <a href="#"><img src="./img/pinterest.png" alt=""></a>
+                    <p><a href="mailto: admin@allmaster.com.ua">admin@domen.us</a></p>
+                </div> <!--end div column-->
+
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-5 col-xs-12 text-center text-sm-center text-lg-left">
+                    <img src="./img/visa.png" alt="">
+                    <img src="./img/mastercard.png" alt="">
+                </div> <!--end div column-->
+
+            </div> <!-- end div row -->
+        </div> <!-- end div container -->
+    </footer>
+
+    <!-- скрипт бутстрапа -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- END SCRIPT-->
+</body>
+</html>
